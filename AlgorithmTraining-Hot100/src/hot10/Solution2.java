@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * 2.字母异位词分组
+ * @author shiningCloud2025
  */
 public class Solution2 {
     public List<List<String>> groupAnagrams(String[] strs) {

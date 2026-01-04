@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AlgorithmTraining.iml" filepath="$PROJECT_DIR$/.idea/AlgorithmTraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmTraining-BaseTemplate/AlgorithmTraining-BaseTemplate.iml" filepath="$PROJECT_DIR$/AlgorithmTraining-BaseTemplate/AlgorithmTraining-BaseTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmTraining-Hot100/AlgorithmTraining-Hot100.iml" filepath="$PROJECT_DIR$/AlgorithmTraining-Hot100/AlgorithmTraining-Hot100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmTraining-WeekCompetition/AlgorithmTraining-WeekCompetition.iml" filepath="$PROJECT_DIR$/AlgorithmTraining-WeekCompetition/AlgorithmTraining-WeekCompetition.iml" />
+    </modules>
+  </component>
+</project>

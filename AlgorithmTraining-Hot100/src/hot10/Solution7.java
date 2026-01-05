@@ -5,4 +5,5 @@ package hot10;
  * @author shiningCloud2025
  */
 public class Solution7 {
+
 }

@@ -1,27 +1,17 @@
-  public List<Integer> findAnagrams(String s, String p) {
-        List<Integer> res = new LinkedList();
-        int[] s_ns = new int[256];
-        int[] p_ns = new int[256];
-        if(s.length()<p.length()){
-            return res;
-        }
-        for(int i=0;i<p.length();i++){
-            s_ns[s.charAt(i)]++;
-            p_ns[p.charAt(i)]++;
-        }
-        if(check(s_ns,p_ns)) res.add(0);
-        for(int l=0,r=p.length();r<s.length();r++){
-            s_ns[s.charAt(r)]++;
-            s_ns[s.charAt(l++)]--;
-            if(check(s_ns,p_ns)) res.add(l);
+ public int subarraySum(int[] nums, int k) {
+        int res = 0;
+        for(int l=0,r=0,sum=0;r<nums.length;++){
+            sum += nums[r];
+            tempSum = sum;
+            tempL = l;
+            while(tempL<r){
+                if(tempSum==k) res++;
+                if(tempL<r){
+                    tempSum -= nums[templ++];
+                }else {
+                    break;
+                }
+            }
         }
         return res;
-
-
     }
-  public boolean check(int[] s_ns,int[] p_ns){
-        for(int i=0;i<256;i++){
-            if(s_ns[i]!=p_ns[i]) return false;
-        }
-        return true;
-  }

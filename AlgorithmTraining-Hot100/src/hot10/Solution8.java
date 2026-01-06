@@ -14,7 +14,7 @@ public class Solution8 {
         Set<Character> set = new HashSet();
         char[] cs = s.toCharArray();
         for(int l=0,r=0;r<cs.length;r++){
-            while(l<r&&set.contains(cs[r])){
+            while(l<=r&&set.contains(cs[r])){
                 set.remove(cs[l++]);
             }
             set.add(cs[r]);

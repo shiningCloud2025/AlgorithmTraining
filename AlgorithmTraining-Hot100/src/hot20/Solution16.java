@@ -5,6 +5,10 @@ package hot20;
  */
 public class Solution16 {
     public int[] productExceptSelf(int[] nums) {
+        // TODO: 需要注意的点:
+        //  1.第一个数的前缀和为1,不为0!!!
+        //  2.最后一个数的后缀和为1,不为0!!
+        //  3.其他数的前缀和就是前一个数的前缀和*前一个数
         int[] res = new int[nums.length];
         int[] frontJ = new int[nums.length];
         int[] lastJ = new int[nums.length];

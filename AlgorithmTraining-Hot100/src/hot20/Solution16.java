@@ -2,6 +2,7 @@ package hot20;
 
 /**
  * 16.除了自身以外数组的乘积
+ * @author shiningCloud2025
  */
 public class Solution16 {
     public int[] productExceptSelf(int[] nums) {

@@ -1,20 +1,26 @@
- public void setZeroes(int[][] matrix) {
-        int m = matrix.length,n = matrix[0].length;
-        int[] hang = new int[m];
-        int[] column = new int[n];
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(matrix[i][j]==0){
-                    hang[i] = 1;
-                    column[j] = 1;
+ public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> res = new LinkedList();
+        int m = matrix.length,n=matrix[0].length-1;
+        int l=0,t=0,r=n-1,b=m-1;
+        while(l<=r&&t<=b){
+            for(int i=l;i<=r;i++){
+                res.add(matrix[t][i]);
+            }
+            for(int i=t+1;i<=b;i++){
+                res.add(matrix[i][r]);
+            }
+            if(l<r&&t<b){
+                for(int i=r-1;i>l;i--){
+                    res.add(matrix[b][i]);
+                }
+                for(int i=b;i>t;i--){
+                    res.add(matrix[i][l]);
                 }
             }
+            l++;
+            t++;
+            r--;
+            b--;
         }
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(hang[i]||column[j]==1){
-                    matrix[i][j] = 0;
-                }
-            }
-        }
+        return res;
     }
